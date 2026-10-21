@@ -1,12 +1,11 @@
 //импорт файла со стилями
 import './Header.css';
+
 //импорт иконок
 import map from './map.png';
-import iconOne from './iconOne.png'
-import iconTwo from './iconTwo.png'
-import iconThree from './iconThree.png'
-
-//import { Link } from 'react-router-dom';
+import iconOne from './iconOne.png';
+import iconTwo from './iconTwo.png';
+import iconThree from './iconThree.png';
 
 function Header() {
     return (
@@ -26,9 +25,9 @@ function Header() {
                     </div>
 
                     <div className="signs">
-                        <a href="#"><img src={iconOne} alt="" /></a>
-                        <a href="#"><img src={iconTwo} alt="" /></a>
-                        <a href="#"><img src={iconThree} alt="" /></a>
+                        <a href="#"><img src={iconOne} alt="Поиск" /></a>
+                        <a href="#"><img src={iconTwo} alt="Профиль" /></a>
+                        <a href="#"><img src={iconThree} alt="Корзина" /></a>
                     </div>
                 </div>
 
@@ -41,7 +40,6 @@ function Header() {
                     <a href="#">магазины</a>
                     <a href="#">новинки</a>
                 </nav>
-
 
             </div>
         </div>

@@ -48,7 +48,7 @@
 }
 
 .brandName p {
-    font-family: 'Julius Sans One';
+    font-family: 'Julius Sans One', sans-serif;
     font-weight: 400;
     font-size: 48px;
     color: #000000;

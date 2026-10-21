@@ -1,0 +1,66 @@
+.bar {
+    width: 100%;
+    background: #ffffff;
+    padding: 25px 0;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+}
+
+.bar .wrap {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.brendLine {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    overflow-x: auto; 
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+}
+
+.brendItem {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+}
+
+.brendItem img {
+    max-width: 100%;
+    max-height: 30px; 
+    width: auto; 
+    height: auto;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.leftbtn, .rightbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 15px;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.leftbtn:hover, .rightbtn:hover {
+    opacity: 0.5;
+}
+
+.leftbtn img, .rightbtn img {
+    width: 24px;
+    height: auto;
+    object-fit: contain;
+}

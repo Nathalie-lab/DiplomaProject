@@ -1,0 +1,44 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    background: url('./parfume.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.main .wrap {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* ========================= ТЕКСТ ================================= */
+.main-content {
+    padding-top: 150px; 
+    max-width: 500px;
+    text-align: left;
+}
+
+.main-content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+}
+
+.main-content p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
