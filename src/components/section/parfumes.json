@@ -1,94 +1,83 @@
 {
   "parfumes": [
     {
+      "image": "/images/lacostel12.jpg",
       "brand": "Lacoste",
       "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
+      "feedback": "★★★★",
+      "price": 4500,
       "volume": 100
     },
     {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
-      "volume": 100
+      "image": "/images/gucciFlora.jpg",
+      "brand": "Gucci",
+      "name": "FLORA",
+      "feedback": "★★★★★",
+      "price": 7500,
+      "volume": 50
     },
     {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
-      "volume": 100
+      "image": "/images/narcAudacious.jpg",
+      "brand": "Nars",
+      "name": "AUDACIOUS",
+      "feedback": "★★★",
+      "price": 6500,
+      "volume": 50
     },
     {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
-      "volume": 100
+      "image": "/images/pacoPhantom.jpg",
+      "brand": "Paco Rabanne",
+      "name": "PHANTOM",
+      "feedback": "★★★★",
+      "price": 5500,
+      "volume": 50
     },
     {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
-      "volume": 100
+      "image": "/images/moscinoCouture.jpg",
+      "brand": "Moschino",
+      "name": "COUTURE!",
+      "feedback": "★★★★",
+      "price": 3000,
+      "volume": 40
     },
     {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
-      "volume": 100
+      "image": "/images/diorDiorella.jpg",
+      "brand": "Dior",
+      "name": "DIORELLA",
+      "feedback": "★★★★",
+      "price": 7000,
+      "volume": 75
     },
     {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
-      "volume": 100
+      "image": "/images/chanelMortiz.jpg",
+      "brand": "Chanel",
+      "name": "ST.MORITZ",
+      "feedback": "★★★★★",
+      "price": 8500,
+      "volume": 50
     },
     {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
-      "volume": 100
+      "image": "/images/versaceBlonde.jpg",
+      "brand": "Versace",
+      "name": "BLONDE",
+      "feedback": "★★★★★",
+      "price": 4000,
+      "volume": 50
     },
     {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
-      "volume": 100
+      "image": "/images/givenchyBloom.jpg",
+      "brand": "Givenchy",
+      "name": "BLOOM",
+      "feedback": "★★★",
+      "price": 7500,
+      "volume": 15
     },
     {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
-      "volume": 100
-    },
-    {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
-      "volume": 100
-    },
-    {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
-      "volume": 100
-    },
-    {
-      "brand": "Lacoste",
-      "name": "L/12",
-      "feedback": "★",
-      "price": 2500,
+      "image": "/images/tomFordOrchid.jpg",
+      "brand": "Tom Ford",
+      "name": "BLACK ORCHID",
+      "feedback": "★★★",
+      "price": 3000,
       "volume": 100
     }
   ]
