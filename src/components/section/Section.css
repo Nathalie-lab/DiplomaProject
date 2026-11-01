@@ -26,20 +26,40 @@
     margin: 0 0 50px 0;
 }
 
-.products {
+/* .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px; 
     row-gap: 60px;
     width: 100%;
     margin-bottom: 60px;
+} */
+
+/* .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+} */
+
+.products {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос карточек на новые строки */
+    justify-content: center; /* ЦЕНТРИРУЕТ карточки, если их меньше 4 в ряду! */
+    gap: 40px 30px; /* Первое число — отступ между рядами (row-gap), второе — между колонками (column-gap) */
+    width: 100%;
+    margin-bottom: 60px;
 }
+
 
 .product-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    /* Вычисляем ширину так, чтобы в один ряд помещалось ровно 4 карточки с учетом gap (отступов) */
+    width: calc((100% - (30px * 3)) / 4); 
+    min-width: 250px; /* Минимальная ширина карточки, чтобы сетка не ломалась на мелких экранах */
+    box-sizing: border-box;
 }
 
 .image-parfumes {

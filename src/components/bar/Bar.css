@@ -16,26 +16,44 @@
     box-sizing: border-box;
 }
 
-.brendLine {
+.brandLine {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 80px;
     width: 100%;
     overflow-x: auto; 
     scroll-behavior: smooth;
     scrollbar-width: none; 
 }
 
-.brendItem {
+.brandItem {
     flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 50px;
+    width: 180px;
+    height: 70px;
+    box-sizing: border-box;
 }
 
-.brendItem img {
+.brendItem a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.brendItem a img {
+    width: 130px; 
+    height: 45px; 
+    object-fit: contain;
+    filter: grayscale(100%); 
+    display: block;
+}
+
+.brandItem img {
     max-width: 100%;
     max-height: 30px; 
     width: auto; 
@@ -43,6 +61,10 @@
     object-fit: contain;
     opacity: 0.8;
     transition: all 0.2s ease;
+}
+
+.brendItem a:hover img {
+    opacity: 0.5;
 }
 
 .leftbtn, .rightbtn {
@@ -55,12 +77,13 @@
     align-items: center;
 }
 
-.leftbtn:hover, .rightbtn:hover {
-    opacity: 0.5;
-}
-
 .leftbtn img, .rightbtn img {
     width: 24px;
     height: auto;
     object-fit: contain;
 }
+
+.leftbtn:hover, .rightbtn:hover {
+    opacity: 0.5;
+}
+

@@ -1,4 +1,6 @@
 import './Bar.css';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 /* импорт логотипов */
 import tomFord from '../bar/logos/tomFord.png';
@@ -16,9 +18,11 @@ import lacoste from '../bar/logos/lacoste.svg';
 import leftArrow from '../bar/logos/leftArrow.png';
 import rightArrow from '../bar/logos/rightArrow.png';
 
-function Bar(){
-    
-    const brands = [
+
+function Bar() {
+
+    //Массив брендов через useState
+    const [brands, setBrands] = useState([
         { id: 1, name: 'Lacoste', img: lacoste },
         { id: 2, name: 'Gucci', img: gucci },
         { id: 3, name: 'Nars', img: nars },
@@ -29,38 +33,50 @@ function Bar(){
         { id: 8, name: 'Versace', img: versace },
         { id: 9, name: 'Givenchy', img: givenchy },
         { id: 10, name: 'Tom Ford', img: tomFord },
-    ];
-    
+    ]);
+
+    //Функция для цикла перелистывания через изменение состояния (useState)
     function scrolling(direction) {
-        const line = document.querySelector('.brendLine');
-        
-        if (line) {
-            if (direction === 'left') {
-                line.scrollLeft -= 300;
-            } else {
-                line.scrollLeft += 300;
-            }
+
+        if (direction === 'left') {
+            //Берем последний элемент и ставим его в начало массива
+            setBrands((prevBrands) => {
+                const updated = [...prevBrands];
+                const lastItem = updated.pop(); // удаляем с конца
+                updated.unshift(lastItem);     // добавляем в начало
+                return updated;
+            });
+        } else {
+            //Берем первый элемент и ставим его в конец массива
+            setBrands((prevBrands) => {
+                const updated = [...prevBrands];
+                const firstItem = updated.shift(); // удаляем с начала
+                updated.push(firstItem);          // добавляем в конец
+                return updated;
+            });
         }
     }
 
-
-    return(
+    return (
         <div className="bar">
             <div className="wrap">
 
-                {/* Стрелка влево */}
-                <button className="leftbtn" onClick={() => scrolling('left')}><img src={rightArrow} alt="Назад" /></button>
+                {/* стрелка назад */}
+                <button className="leftbtn" onClick={() => scrolling('left')}><img src={leftArrow} alt="Назад"/></button>
 
-                <div className="brendLine">
+                <div className="brandLine">
                     {brands.map((brand) => (
-                        <div key={brand.id} className="brendItem">
-                            <img src={brand.img} alt={brand.name} />
-                        </div>
+                        
+            <div key={brand.id} className="brendItem">
+                <Link to={`/brand/${brand.name.toLowerCase().replace(' ', '-')}`}>
+                    <img src={brand.img} alt={brand.name} />
+                </Link>
+            </div>
                     ))}
                 </div>
 
                 {/* Стрелка вправо */}
-                <button className="rightbtn" onClick={() => scrolling('right')}><img src={leftArrow} alt="Вперед" /></button>
+                <button className="rightbtn" onClick={() => scrolling('right')}><img src={rightArrow} alt="Вперед"/></button>
 
             </div>
         </div>

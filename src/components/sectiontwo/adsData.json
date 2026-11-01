@@ -1,0 +1,28 @@
+{
+    "ads": [
+        {
+            "id": 1,
+            "image": "./ads/one.png",
+            "title": "Скидки до 45% на AROMA & MAY",
+            "date": "до 10 декабря"
+        },
+        {
+            "id": 2,
+            "image": "./ads/two.png",
+            "title": "Скидка 50% на ALL INCLUSIVE",
+            "date": "до 5 декабря"
+        },
+        {
+            "id": 3,
+            "image": "./ads/three.png",
+            "title": "Скидки до 25% на DECODE",
+            "date": "до 17 декабря"
+        },
+        {
+            "id": 4,
+            "image": "./ads/four.png",
+            "title": "Получайте в 5 раз больше бонусов",
+            "date": "до 31 декабря"
+        }
+    ]
+}
