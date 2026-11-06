@@ -1,0 +1,57 @@
+{
+  "parfumes": {
+    "lacoste": [
+        {
+        "image": "/images/lacostel12.jpg",
+        "brand": "Lacoste",
+        "name": "L.12.12 Blanc",
+        "feedback": "★★★★",
+        "price": 9819 ,
+        "volume": 100
+        },
+        {
+        "image": "/images/lacostel12.jpg",
+        "brand": "Lacoste",
+        "name": "L/12",
+        "feedback": "★★★★",
+        "price": 4500,
+        "volume": 100
+        },
+        { 
+        "image": "/images/lacostel12.jpg",
+        "brand": "Lacoste",
+        "name": "L/12",
+        "feedback": "★★★★",
+        "price": 4500,
+        "volume": 100
+            },
+        { 
+        "image": "/images/lacostel12.jpg",
+        "brand": "Lacoste",
+        "name": "L/12",
+        "feedback": "★★★★",
+        "price": 4500,
+        "volume": 100
+        }
+    ],
+    "gucci": [
+    {
+      "image": "/images/gucciFlora.jpg",
+      "brand": "Gucci",
+      "name": "FLORA",
+      "feedback": "★★★★★",
+      "price": 7500,
+      "volume": 50
+    },
+    {
+      "image": "/images/gucciFlora.jpg",
+      "brand": "Gucci",
+      "name": "FLORA",
+      "feedback": "★★★★★",
+      "price": 7500,
+      "volume": 50
+    }
+    ]
+
+}
+}

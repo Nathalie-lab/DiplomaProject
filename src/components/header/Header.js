@@ -7,6 +7,8 @@ import iconOne from './iconOne.png';
 import iconTwo from './iconTwo.png';
 import iconThree from './iconThree.png';
 
+import { Link } from 'react-router-dom';
+
 function Header() {
     return (
         <div className="header">
@@ -15,10 +17,12 @@ function Header() {
                 {/* Верхняя строка меню */}
                 <div className="menuUp">
 
-                    <div className="map">
-                        <img src={map} alt="Иконка локации" />
-                        <span>Москва</span>
-                    </div>
+                    <Link to='/map'>
+                        <div className="map">
+                            <img src={map} alt="Иконка локации" />
+                            <span>Москва</span>
+                        </div>
+                    </Link>
 
                     <div className="brandName">
                         <p>YOU</p>

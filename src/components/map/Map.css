@@ -1,0 +1,80 @@
+.map-page {
+    width: 100%;
+    background: #ffffff;
+    padding-top: 180px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.map-page .wrap {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* ================================== НАЗАД НА ГЛАВНУЮ ============================================== */
+.back-page {
+    margin-bottom: 20px;
+}
+
+.back-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 23px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.back-title:hover {
+    text-decoration: underline;
+}
+
+/* ========================================== НАШИ ТОРГОВЫЕ ТОЧКИ =================================== */
+
+.map-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0 0 40px 0;
+}
+
+.map-iframe {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ====================================== ВЫБЕРИТЕ ГОРОД ========================================= */
+
+.choose-city-list {
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px; 
+}
+
+.choose-city-list label {
+    font-size: 16px;
+    color: #7b7b7b;
+    text-transform: lowercase;
+}
+
+.choose-city-list select {
+    width: 100%;
+    padding: 10px 30px 10px 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #000000;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
