@@ -1,0 +1,173 @@
+.search-page {
+    width: 100%;
+    background: #ffffff;
+    padding-top: 180px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.search-page .wrap {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/* ========================== НАЗАД НА ГЛАВНУЮ ============================ */
+
+.back-page {
+    margin-bottom: 20px;
+}
+
+.back-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 23px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.back-title:hover {
+    text-decoration: underline;
+}
+
+/* ============================== БРЕНДЫ (10) =================================== */
+.search-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0 0 35px 0;
+}
+
+/* ============================== СЧЕТЧИК ====================================== */
+.counter {
+    color: rgba(156, 156, 156, 0.99);
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 44px;
+}
+
+/* ================================ ПОИСК ==================================== */
+.search-input {
+    margin-bottom: 30px;
+}
+
+.search-input input {
+    width: 100%;
+    max-width: 600px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: rgba(103, 103, 103, 0.99);
+    border: none;
+    border-bottom: 1px solid rgba(156, 156, 156, 0.99);
+    background: transparent;
+}
+
+.search-input input::placeholder {
+    color: white;
+}
+
+/* ====================================== КНОПКИ ВСЁ И ИЗБРАННОЕ ===============================*/
+.search-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.search-buttons button {
+    padding: 8px 20px;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.search-buttons button.active {
+    background: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+/* ==================================== АЛФАВИТ ============================= */
+.search-alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 60px;
+}
+
+.search-alphabet button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: #000000;
+    cursor: pointer;
+    padding: 2px 4px;
+    transition: opacity 0.2s;
+}
+
+.search-alphabet button:hover {
+    opacity: 0.5;
+}
+
+.search-alphabet button.active {
+    font-weight: 700;
+    border-bottom: 2px solid #000000;
+}
+
+/* ============================================ КОЛОНКИ С БУКВАМИ ============================================= */
+.search-brands {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+}
+
+.search-brands-alphabet {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.big-letter {
+    font-family: 'Raleway', sans-serif;
+    font-size: 90px;
+    font-weight: 500;
+    color: #9B9B9B;;
+    line-height: 0.9;
+    width: 60px;
+    flex-shrink: 0;
+}
+
+.letters-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 24px;
+    width: 100%;
+}
+
+.letters-columns a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.letters-columns a:hover {
+    opacity: 0.5;
+}

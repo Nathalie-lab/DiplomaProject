@@ -5,6 +5,9 @@ import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/header/Header';
 import Map from './components/map/Map';
+import Search from './components/search/Search';
+
+
 import Main from './components/main/Main';
 import Bar from './components/bar/Bar';
 import Section from './components/section/Section';
@@ -30,6 +33,7 @@ function App() {
 
         <Route path="/brand/:brandName" element={<BrandPages />} />
         <Route path="/map" element={<Map />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
 
     </div>

@@ -28,9 +28,14 @@ function Header() {
                         <p>YOU</p>
                     </div>
 
+
+                    {/* Три иконки вверху справа */}
                     <div className="signs">
-                        <a href="#"><img src={iconOne} alt="Поиск" /></a>
+                        {/* Иконка лупы для поиска */}
+                        <Link to="/search"><img src={iconOne} alt="Поиск" /></Link>
+                        {/* Иконка человечка для профиля */}
                         <a href="#"><img src={iconTwo} alt="Профиль" /></a>
+                        {/* Иконка корзинки для покупок */}
                         <a href="#"><img src={iconThree} alt="Корзина" /></a>
                     </div>
                 </div>
