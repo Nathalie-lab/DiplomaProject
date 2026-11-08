@@ -34,7 +34,7 @@ function Header() {
                         {/* Иконка лупы для поиска */}
                         <Link to="/search"><img src={iconOne} alt="Поиск" /></Link>
                         {/* Иконка человечка для профиля */}
-                        <a href="#"><img src={iconTwo} alt="Профиль" /></a>
+                        <Link to="/profile"><img src={iconTwo} alt="Профиль" /></Link>
                         {/* Иконка корзинки для покупок */}
                         <a href="#"><img src={iconThree} alt="Корзина" /></a>
                     </div>

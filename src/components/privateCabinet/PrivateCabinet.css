@@ -1,0 +1,274 @@
+.cabinet {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ========================= УСПЕШНАЯ РЕГИСТРАЦИЯ ============================= */
+.success-welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edf7ed;
+    color: #1e4620;
+    border-left: 3px solid #2e7d32;
+    padding: 14px 20px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.close-welcome {
+    background: none;
+    border: none;
+    color: #1e4620;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: opacity 0.2s ease;
+}
+
+.close-welcome:hover {
+    opacity: 0.6;
+}
+
+/* ================================ ХЭДЕР С ИМЕНЕМ ФАМИЛИЕЙ И ПОЧТОЙ ========================= */
+.cabinet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 40px;
+}
+
+.cabinet-title {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0 0 8px 0;
+    color: #000000;
+}
+
+.cabinet-email {
+    font-size: 15px;
+    color: #777777;
+    margin: 0;
+}
+
+/* ====================================== КНОПКА ВЫХОДА ИЗ КАБИНЕТА ============================== */
+.exit-button {
+    padding: 10px 24px;
+    background: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.exit-button:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+/* ==================================== МОИ ДАННЫЕ И БОНУСНАЯ КАРТА ======================== */
+.cabinet-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.cabinet-card {
+    border: 1px solid #eaeaea;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+/* ========================================== МОИ ЗАКАЗЫ ======================================== */
+.cabinet-card:nth-child(3) {
+    grid-column: span 2;
+}
+
+.cabinet-card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    color: #000000;
+}
+
+.cabinet-card p {
+    font-size: 15px;
+    color: #333333;
+    margin: 0;
+}
+
+/* ====================================== СЧЕТЧИК БОНУСОВ ====================================== */
+.bonus-counter {
+    font-size: 28px !important;
+    font-weight: 500;
+    color: #000000 !important;
+}
+
+.no-orders {
+    font-size: 14px;
+    color: #888888;
+}
+
+/* ====================================== ИСТОРИЯ БОНУСОВ ==================================== */
+.bonus-history {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.history-title {
+    font-size: 13px;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ================================== ЭТО ОДНА СТРОКА ИСТОРИИ =================================== */
+.history-point {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.history-point-title {
+    font-size: 14px !important;
+    color: #000000 !important;
+    margin: 0 0 2px 0 !important;
+}
+
+.history-point-date {
+    font-size: 12px;
+    color: #999999;
+}
+
+.total-history-points {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2e7d32;
+}
+
+/* ================================= КНОПКА СКРЫТЬ / ПОКАЗАТЬ ================================== */
+.show-full-history {
+    margin-top: 8px;
+    align-self: flex-start;
+    padding: 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #000000;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.show-full-history:hover {
+    opacity: 0.6;
+}
+
+/* ========================================= ПЕРЕЙТИ В КАТАЛОГ ================================= */
+.catalog {
+    margin-top: 10px;
+    align-self: flex-start;
+    padding: 12px 28px;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
+
+.catalog:hover {
+    background: #333333;
+}
+
+
+/* ================================== ТЕЛЕФОН И АДРЕС ================================ */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 8px 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.contact-form input::placeholder {
+    color: #999999;
+    font-weight: 300;
+}
+
+.contact-form input:focus {
+    border-bottom-color: #000000;
+}
+
+/* ================================== СОХРАНИТЬ ===================================== */
+.save-button {
+    margin-top: 5px;
+    align-self: flex-start;
+    padding: 10px 20px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.save-button:hover {
+    background: #333333;
+}
+
+/* ========================================= ПРОВЕРКА ДАННЫХ =========================== */
+.check-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.check-button {
+    margin-top: 5px;
+    align-self: flex-start;
+    padding: 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #000000;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.check-button:hover {
+    opacity: 0.6;
+}
