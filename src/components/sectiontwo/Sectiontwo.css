@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-/* ВЕРХНЯЯ ЧАСТЬ: Заголовок и стрелки в одну строку */
+/* Заголовок СПЕЦ ПРЕДЛОЖЕНИЯ и стрелки в одну строку */
 .section-header {
     display: flex;
     justify-content: flex-start; 
@@ -59,14 +59,17 @@
     opacity: 0.5;
 }
 
-/* картинок-стрелочек */
 .header-arrows .arrow-btn img {
     width: 28px; 
     height: auto;
     object-fit: contain;
 }
 
-/* СЕТКА БАННЕРОВ: 4 штуки в ряд */
+.left-btn{
+    transform: rotate(180deg); 
+}
+
+/* КАРТОЧКИ-ОБЪЯВЛЕНИЯ */
 .ads-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -82,7 +85,6 @@
     width: 100%;
 }
 
-/* Обертка для картинки акции */
 .ad-img-container {
     width: 100%;
     height: auto;
@@ -97,7 +99,7 @@
     display: block;
 }
 
-/* Текстовая информация под баннером */
+/* ТЕКСТ ПОД ОБЪЯВЛЕНИЕМ */
 .ad-info {
     display: flex;
     flex-direction: column;
@@ -106,7 +108,6 @@
     position: relative;
 }
 
-/* Название акции */
 .ad-title {
     font-weight: 400;
     font-size: 14px;
@@ -116,7 +117,6 @@
     display: block;
 }
 
-/* Дата проведения */
 .ad-date {
     font-weight: 300;
     font-size: 13px;
